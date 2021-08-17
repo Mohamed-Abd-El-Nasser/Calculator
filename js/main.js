@@ -117,6 +117,7 @@ div.addEventListener('click',function(){
     inputs.innerHTML = '0';
     inputs.value ='0';
     cal.value = '/';
+    j=0;
     
 })
 mul.addEventListener('click',function(){
@@ -125,6 +126,7 @@ mul.addEventListener('click',function(){
     inputs.innerHTML = '0';
     inputs.value='0'
     cal.value = '*';
+    j=0;
 })
 sub.addEventListener('click',function(){
 
@@ -132,6 +134,7 @@ sub.addEventListener('click',function(){
     inputs.innerHTML = '0';
     inputs.value='0';
     cal.value = '-';
+    j=0;
 })
 add.addEventListener('click',function(){
 
@@ -139,9 +142,13 @@ add.addEventListener('click',function(){
     inputs.innerHTML = '0';
     inputs.value='0';
     cal.value = '+';
+    j=0;
 })
+var j = 0 ;
+
 equal.addEventListener('click',function(){
 
+    if(j==0){
    y = parseInt(inputs.textContent);
    var l = 1;
    if(cal.value=='/'){
@@ -162,7 +169,8 @@ equal.addEventListener('click',function(){
     inputs.innerHTML = r.toString();
     
  }
- 
+}
+     j++;
 })
 if(inputs.value.length <=1){
     inputs.innerHTML='0';
