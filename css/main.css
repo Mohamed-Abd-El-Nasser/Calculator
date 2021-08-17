@@ -33,7 +33,12 @@
     padding: 30px;
     cursor: pointer;
     border: 1px solid #000;
+    transition: .5s ease-in-out;
 
+}
+.font:hover{
+    background-color: #ebebeb;
+    transition: .5s ease-in-out;
 }
 .clear{
     width:50% ;
@@ -46,8 +51,19 @@
     cursor: pointer;
     text-align: center;
     padding: 30px;
+    transition: .5s ease-in-out;
     border: 1px solid #000;
+}
+.zero:hover{
+    transition: .5s ease-in-out;
+    
+    background-color: #ebebeb;
 }
 .color{
     background-color: rgb(223, 151, 76);
+
+}
+.color:hover{
+    background-color: #dfb07e;
+    transition: .5s ease-in-out;
 }
